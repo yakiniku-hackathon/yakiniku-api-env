@@ -8,7 +8,7 @@ COPY requirements.txt /build/
 
 # 必要なパッケージのインストール
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends gcc default-libmysqlclient-dev build-essential pkg-config libmariadb3 libmariadb-dev && \
+    apt-get install -y --no-install-recommends gcc default-libmysqlclient-dev build-essential pkg-config libmariadb3 libmariadb-dev libmariadbclient-dev && \
     rm -rf /var/lib/apt/lists/*
 
 # pipをアップグレードし、依存関係をインストール
