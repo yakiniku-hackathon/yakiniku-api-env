@@ -40,4 +40,4 @@ jobs:
           tags: |
             ghcr.io/${{ env.ORG_NAME_LOWER }}/dev/yakiniku-api:latest
             ghcr.io/${{ env.ORG_NAME_LOWER }}/dev/yakiniku-api:${{ env.TAG_NAME }}
-          platforms: linux/amd64,linux/arm64,windows/amd64
+          platforms: linux/amd64,linux/arm64
