@@ -23,7 +23,7 @@ WORKDIR /app
 
 # ロケールの設定
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends locales libmariadb3 libmariadb-dev && \
+    apt-get install -y --no-install-recommends locales libmariadb3 libmariadb-dev curl && \
     localedef -f UTF-8 -i ja_JP ja_JP.UTF-8 && \
     rm -rf /var/lib/apt/lists/*
 
