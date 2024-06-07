@@ -38,6 +38,6 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ env.ORG_NAME_LOWER }}/yakiniku-api:latest
-            ghcr.io/${{ env.ORG_NAME_LOWER }}/arm32v7/yakiniku-api:${{ env.TAG_NAME }}
+            ghcr.io/${{ env.ORG_NAME_LOWER }}/dev/yakiniku-api:latest
+            ghcr.io/${{ env.ORG_NAME_LOWER }}/dev/yakiniku-api:${{ env.TAG_NAME }}
           platforms: linux/arm64
